@@ -1,0 +1,23 @@
+.home--page {
+  background-color: var(--blue);
+}
+
+.home--main-header {
+  font-family: var(--title);
+  font-size: 4rem;
+  color: var(--yellow);
+  margin-left: 2rem;
+  margin-top: 20vh;
+  letter-spacing: 0.2rem;
+}
+
+.home--main-header span {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .home--main-header {
+    font-size: 8rem;
+    margin-left: 4rem;
+  }
+}
