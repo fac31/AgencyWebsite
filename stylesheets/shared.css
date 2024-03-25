@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+:root {
+  --yellow: #FFD639;
+  --blue: #38AECC;
+  --title: "Chewy";
+}
