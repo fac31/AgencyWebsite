@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  .contact-form {
+    background-color: #0077cc;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+  }
+  .form-field {
+    margin-bottom: 10px;
+  }
+  input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
