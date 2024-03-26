@@ -1,9 +1,48 @@
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --yellow: #FFD639;
-  --blue: #38AECC;
+  --yellow: #F8C537;
+  --blue: #2F97C1;
   --title: "Chewy";
+  --body: "Open Sans";
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.slide-in-section {
+  transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(4rem);
+}
+
+
+/*
+
+2F97C1
+41BBD9
+#92BFB1
+#0090C1
+#38AECC
+#0F8B8D
+#007CBE
+#75B8C8
+
+
+#F4AC45
+#DDA448
+#FFD151
+#F8C537
+#EDB230
+#EC9A29
+#FFD639
+#FBAF00
+*/
