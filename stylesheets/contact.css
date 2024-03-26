@@ -1,42 +1,123 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-  .contact-form {
-    background-color: #0077cc;
-    padding: 20px;
-    width: 300px;
+  background-color: #2F97C1;
+  padding: 20px;
+}
+/* .contact-form {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 16px;
+  width: auto;
+} */
+
+.contact-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
     margin: auto;
-  }
-  .form-field {
-    margin-bottom: 10px;
-  }
-  input[type=text], input[type=email], input[type=tel], textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  button {
-    background-color: #f0ad4e;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  button:hover {
-    opacity: 0.8;
-  }
-  .footer {
-    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-    background-color: #ddd;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+}
+.form-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.form-column {
+  flex: 1;
+  min-width: 200px;
+  
   }
+
+.navigation--button {
+    all: unset;
+    font-family: var(--title);
+    background-color: var(--yellow);
+    width: 8rem;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 16px;
+    color: white;
+  }
+
+
+  .home--main-header {
+    font-family: var(--title);
+    font-size: 3rem;
+    color: var(--yellow);
+    letter-spacing: 0.2rem;
+    animation: slideIn 1s ease forwards;
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.form-field {
+  margin-bottom: 10px;
+  font-family: var(--body);
+}
+/* input[type=text], input[type=email], input[type=tel], textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: var(--body);
+} */
+
+
+input[type=text],input[type=email], input[type=tel], textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+button {
+  background-color: #F8C537;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: var(--title);
+  border-radius: 16px;
+}
+button:hover {
+  opacity: 0.8;
+}
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2F97C1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: var(--body);
+  color:white
+}
+
+.nav--buttons-container {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+}
+
+.home--paw-nav {
+    color: white;
+    font-size: 2rem;
+}
+
+.socialmedia-icon img {
+    width: 30px;
+    height:auto;
+}
