@@ -1,3 +1,8 @@
+header {
+  position: relative;
+  height: 100vh;
+}
+
 .home--page {
   background-color: var(--blue);
 }
@@ -9,15 +14,172 @@
   margin-left: 2rem;
   margin-top: 20vh;
   letter-spacing: 0.2rem;
+  animation: slideIn 1s ease forwards;
 }
 
 .home--main-header span {
   display: block;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding: 0 2rem;
+}
+
+.home--paw-nav {
+  color: white;
+  font-size: 2rem;
+}
+
+.nav--buttons-container {
+  display: none;
+}
+
+.navigation--button {
+  all: unset;
+  font-family: var(--title);
+  background-color: var(--yellow);
+  width: 8rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 16px;
+  color: white;
+}
+
+.home--paw-header {
+  font-size: 3rem;
+  position: absolute;
+  color: white;
+}
+
+.home--paw-hidden {
+  opacity: 0;
+}
+
+.home--paw-9 {
+  bottom: 20rem;
+  right: 2rem;
+  transform: rotate(60deg);
+}
+
+.home--paw-8 {
+  bottom: 15rem;
+  right: 2rem;
+  transform: rotate(55deg);
+}
+
+.home--paw-7 {
+  bottom: 17rem;
+  right: 7rem;
+  transform: rotate(52deg);
+}
+
+.home--paw-6 {
+  bottom: 11rem;
+  right: 6rem;
+  transform: rotate(50deg);
+}
+
+.home--paw-5 {
+  bottom: 12.5rem;
+  right: 11.5rem;
+  transform: rotate(45deg);
+}
+
+.home--paw-4 {
+  bottom: 6rem;
+  right: 9rem;
+  transform: rotate(45deg);
+}
+
+.home--paw-3 {
+  bottom: 7rem;
+  right: 15rem;
+  transform: rotate(40deg);
+}
+
+.home--paw-2 {
+  bottom: 1rem;
+  right: 12rem;
+  transform: rotate(40deg);
+}
+
+.home--paw-1 {
+  bottom: 1rem;
+  right: 18rem;
+  transform: rotate(30deg);
+}
+
+.home--about-section {
+  margin: 12rem auto;
+  width: 90%;
+  text-align: center;
+  color: white;
+}
+
+.home--about-header {
+  font-family: var(--title);
+  font-size: 3rem;
+}
+
+.home--about-text {
+  max-width: 48rem;
+  margin: 1rem auto;
+  font-family: var(--body);
+}
+
+.home--images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2rem;
+  max-width: 48rem;
+  margin: 4rem auto;
+}
+
+.home--dog-image__container {
+  background-color: white;
+  width: 7rem;
+  border-radius: 16px;
+  justify-self: center;
+}
+
+.home--dog-image {
+  height: 6rem;
+  width: 6rem;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @media (min-width: 600px) {
   .home--main-header {
     font-size: 8rem;
     margin-left: 4rem;
+  }
+
+  .nav--buttons-container {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+  }
+
+  .home--about-header {
+    font-family: var(--title);
+    font-size: 4rem;
+  }
+
+  .home--images-grid {
+    grid-row-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
   }
 }
