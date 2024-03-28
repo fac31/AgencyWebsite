@@ -15,11 +15,23 @@
   </head>
   <body class="home--page">
       <header>
-        <nav>
-          <div>
-            <a href="/"><i class="fa-solid fa-paw home--paw-nav"></i></a>
+        <nav class="mobile--nav">
+          <button class="mobile--nav-hamburger">
+            <div class="mobile--nav-hamburger-top"></div>
+            <div class="mobile--nav-hamburger-middle"></div>
+            <div class="mobile--nav-hamburger-bottom"></div>
+          </button>
+          <div class="mobile--nav-menu mobile--nav-menu_hidden">
+            <button class="mobile--nav-button"><a href="/">HOME</a></button>
+            <button class="mobile--nav-button"><a href="team.html">MEET THE GANG</a</button>
+            <button class="mobile--nav-button"><a href="contact.html">CONTACT US</a></button>
           </div>
-          <div class="nav--buttons-container">
+        </nav>
+        <nav class="desktop--nav">
+          <div>
+            <a href="/"><i class="fa-solid fa-paw desktop--nav-paw"></i></a>
+          </div>
+          <div class="desktop--nav--buttons-container">
             <button class="navigation--button"><a href="team.html">MEET THE GANG</a></button>
             <button class="navigation--button"><a href="contact.html">CONTACT US</a></button>
           </div>
