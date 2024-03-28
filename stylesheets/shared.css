@@ -25,24 +25,136 @@ a {
 }
 
 
-/*
+// NAV
 
-2F97C1
-41BBD9
-#92BFB1
-#0090C1
-#38AECC
-#0F8B8D
-#007CBE
-#75B8C8
+.mobile--nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 6rem;
+  padding: 0 2rem;
+}
 
+.mobile--nav-hamburger {
+  all: unset;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 90;
+}
 
-#F4AC45
-#DDA448
-#FFD151
-#F8C537
-#EDB230
-#EC9A29
-#FFD639
-#FBAF00
-*/
+.mobile--nav-hamburger-top,
+.mobile--nav-hamburger-middle,
+.mobile--nav-hamburger-bottom {
+  position: absolute;
+  width: 1.5rem;
+  height: 0.2rem;
+  top: 0;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  transform: rotate(0);
+}
+
+.mobile--nav-hamburger-middle {
+  transform: translateY(0.5rem);
+}
+
+.mobile--nav-hamburger-bottom {
+  transform: translateY(1rem);
+}
+
+.mobile--nav-hamburger-top_active {
+  transform: translateY(0.5rem) rotate(45deg);
+  background: var(--yellow);
+}
+
+.mobile--nav-hamburger-middle_hidden {
+  display: none;
+}
+
+.mobile--nav-hamburger-bottom_active {
+  transform: translateY(0.5rem) rotate(-45deg);
+  background: var(--yellow);
+}
+
+.mobile--nav-menu {
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 12rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: left 0.5s ease;
+}
+
+.mobile--nav-menu_hidden {
+  left: 100%;
+  transition: left 0.5s ease;
+}
+
+.mobile--nav-button {
+  all: unset;
+  color: var(--yellow);
+  font-family: var(--title);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.desktop--nav {
+  display: none;
+}
+
+.navigation--button {
+  all: unset;
+  font-family: var(--title);
+  background-color: var(--yellow);
+  width: 8rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 16px;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .mobile--nav {
+    display: none;
+  }
+
+  .desktop--nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    /* padding: 0 2rem; */
+  }
+
+  .desktop--nav-paw {
+    color: white;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+  .desktop--nav:hover {
+    cursor: pointer;
+  }
+
+  .desktop--nav--buttons-container {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+    margin-right: 2rem;
+  }
+}
