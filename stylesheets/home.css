@@ -115,13 +115,17 @@ header {
 .home--dog-image__container {
   background-color: white;
   width: 7rem;
+  height: 7rem;
   border-radius: 16px;
   justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home--dog-image {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 @keyframes slideIn {
