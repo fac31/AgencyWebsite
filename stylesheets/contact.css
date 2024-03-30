@@ -1,123 +1,143 @@
 body {
   background-color: #2F97C1;
   padding: 20px;
+  overflow: hidden;
 }
-/* .contact-form {
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  border-radius: 16px;
-  width: auto;
-} */
-
-.contact-form {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    margin: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-
-}
-.form-columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-
-.form-column {
-  flex: 1;
-  min-width: 200px;
-  
-  }
 
 .navigation--button {
-    all: unset;
-    font-family: var(--title);
-    background-color: var(--yellow);
-    width: 8rem;
-    text-align: center;
-    padding: 1rem 0;
-    border-radius: 16px;
-    color: white;
-  }
-
-
-  .home--main-header {
-    font-family: var(--title);
-    font-size: 3rem;
-    color: var(--yellow);
-    letter-spacing: 0.2rem;
-    animation: slideIn 1s ease forwards;
-    position: fixed;
-    top: 15px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-.form-field {
-  margin-bottom: 10px;
-  font-family: var(--body);
+  all: unset;
+  font-family: var(--title);
+  background-color: var(--yellow);
+  width: 8rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 16px;
+  color: white;
 }
-/* input[type=text], input[type=email], input[type=tel], textarea {
+.nav--buttons-container {
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
+}
+
+
+.contact-form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width:80%; 
+  max-width: 500px; 
+  margin: 150px auto 20px; 
+  padding: 80px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.form-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form-column{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--body);
+  font-weight: bold;
+  gap: 4px;
+}
+
+.contact--main-header {
+  font-family: var(--title);
+  font-size: 3rem;
+  color: var(--yellow);
+  letter-spacing: 0.2rem;
+  animation: slideIn 1s ease forwards;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+textarea {
+  border: 2px solid black;
+  padding: 20px; 
+  resize: none ; 
+  width:100%;
+  height: 32px;
+}
+
+input[type="text"],input[type="email"], input[type="tel"], input [type="date"] {
   width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
   font-family: var(--body);
-} */
-
-
-input[type=text],input[type=email], input[type=tel], textarea {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid black;
 }
+
 button {
   background-color: #F8C537;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: auto;
   font-family: var(--title);
   border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-top: 30px;
 }
+
 button:hover {
   opacity: 0.8;
 }
+
 .footer {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure items are spaced evenly */
+  text-align: center; /* Center align text within each div */
   padding: 10px;
   background-color: #2F97C1;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   font-family: var(--body);
   color:white
 }
 
-.nav--buttons-container {
-    display: flex;
-    width: 20rem;
-    justify-content: space-between;
+.social-media-icons {
+  display: flex; /* Ensure the icons are displayed in a row */
+  /* align-items: center; */
+  justify-content: center;
 }
 
-.home--paw-nav {
-    color: white;
-    font-size: 2rem;
+.socialmedia-icon {
+  margin:5px; /* Adjust margin between icons as needed */
+}
+
+.socialmedia-icon img {
+  width: 30px;
+  height:auto;
+  cursor: pointer;
+}
+
+.left-text,
+.right-text {
+  flex: 1; /* Each div takes equal space */
+  align-items: center; /*AYTO*/
+}
+
+.bold {
+  font-weight: bold; /* Apply bold font weight */
+}
+
+.left-text p,
+.right-text p {
+  margin: 0;
 }
 
 .socialmedia-icon img {
     width: 30px;
     height:auto;
+    margin-top: 5px;
 }
