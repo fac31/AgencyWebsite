@@ -6,18 +6,131 @@
       <link rel="icon" href="images/favicon.ico">
       <link rel="stylesheet" href="./stylesheets/shared.css">
       <link rel="stylesheet" href="./stylesheets/team.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Indie+Flower&family=Judson:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       <script defer src="./javascript/team.js" type="module"></script>
       <title>Pawsitivity Partners</title>
   </head>
-  <body>
+  <body class="team--page">
     <header>
-      <h1 class="home--main-header">MEET THE GANG</h1>
+      <nav class="mobile--nav">
+        <button class="mobile--nav-hamburger" aria-label="Toggle navigation">
+          <div class="mobile--nav-hamburger-top"></div>
+          <div class="mobile--nav-hamburger-middle"></div>
+          <div class="mobile--nav-hamburger-bottom"></div>
+        </button>
+        <div class="mobile--nav-menu mobile--nav-menu_hidden">
+          <button class="mobile--nav-button"><a href="/">HOME</a></button>
+          <button class="mobile--nav-button"><a href="team.html">MEET THE GANG</a</button>
+          <button class="mobile--nav-button"><a href="contact.html">CONTACT US</a></button>
+        </div>
+      </nav>
+      <nav class="desktop--nav">
+        <div>
+          <a href="/"><i class="fa-solid fa-paw desktop--nav-paw"></i></a>
+        </div>
+        <div class="desktop--nav--buttons-container">
+          <button class="navigation--button"><a href="team.html">MEET THE GANG</a></button>
+          <button class="navigation--button"><a href="contact.html">CONTACT US</a></button>
+        </div>
+      </nav>
+      <h1 class="team--main-header">MEET THE GANG</h1>
     </header>
     <main>
-
+      <section class="team-section">
+        <div class="team-container">
+          <div class="team-member">
+            <div class="name-container">
+              <img src="images/lady.png" alt="Buddy the dog" class="profile-pic">
+              <span class="name">Buddy</span>
+            </div>
+          <div class="info">
+            <p>Likes: Belly rubs, playing fetch, going on walks.</p>
+            <p>Dislikes: Loud noises, thunderstorms.</p>
+            <p>Best Pal: Daisy.</p>
+          </div>
+        </div>
+          <div class="team-member">
+            <div class="name-container">
+              <img src="images/100dalmatians.jpg" alt="Luna the dog" class="profile-pic">
+              <span class="name">LUNA</span>
+            </div>
+            <div class="info">
+              <p>Likes: Chasing squirrels, cuddling, sunbathing.</p>
+              <p>Dislikes: Baths, being left alone.</p>
+              <p>Best Pal: Max.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="name-container">
+              <img src="images/Scooby-Doo.png" alt="Rocky the dog" class="profile-pic">
+              <span class="name">ROCKY</span>
+            </div>
+            <div class="info">
+              <p>Likes: Hiking, exploring, playing in the snow.</p>
+              <p>Dislikes: Vacuum cleaners, being teased.</p>
+              <p>Best Pal: Bailey.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="name-container">
+              <img src="images/tramp.png" alt="Coco the dog" class="profile-pic">
+              <span class="name">COCO</span>
+            </div>
+            <div class="info">
+              <p>Likes: Treats, playing with squeaky toys, car rides.</p>
+              <p>Dislikes: Rainy days, being ignored.</p>
+              <p>Best Pal: Bella.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="name-container">
+              <img src="images/snowy.jpg" alt="Max the dog" class="profile-pic">
+              <span class="name">MAX</span>
+            </div>
+            <div class="info">
+              <p>Likes: Learning new tricks, agility courses, long runs.</p>
+              <p>Dislikes: Fireworks, strangers.</p>
+              <p>Best Pal: Luna.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="name-container">
+              <img src="images/dog.png" alt="Daisy the dog" class="profile-pic">
+              <span class="name">DAISY</span>
+            </div>
+            <div class="info">
+              <p>Likes: Swimming, playing in the mud, chasing butterflies.</p>
+              <p>Dislikes: Cold weather, being scolded.</p>
+              <p>Best Pal: Buddy.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="name-container">
+              <img src="images/dog2.png" alt="Bailey the dog" class="profile-pic">
+              <span class="name">BAILEY</span>
+            </div>
+            <div class="info">
+              <p>Likes: Digging, playing with other dogs, getting belly rubs.</p>
+              <p>Dislikes: Being alone, loud noises.</p>
+              <p>Best pal: Rocky.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="name-container">
+              <img src="images/Droopy_dog.png" alt="Bella the dog" class="profile-pic">
+              <span class="name">BELLA</span>
+            </div>
+            <div class="info">
+              <p>Likes: Being groomed, sunbathing, snuggling on the couch.</p>
+              <p>Dislikes: Thunderstorms, sharing toys.</p>
+              <p>Best pal: Coco.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
