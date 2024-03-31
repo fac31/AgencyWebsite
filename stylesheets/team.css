@@ -1,0 +1,101 @@
+body {
+    background-color: #2F97C1;
+    font-size: 14px;
+}
+
+.team--main-header {
+    font-family: var(--title);
+    font-size: 3rem;
+    color: var(--yellow);
+    letter-spacing: 0.2rem;
+    animation: slideIn 1s ease forwards;
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.team-section {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    font-family: var(--body);
+    margin-top: 150px;
+    background-color: #2F97C1;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    padding:20px;
+}
+
+
+.team-member {
+    position: relative;
+    background-color: #fff; 
+    border-radius: 10px; /* Rounded corners */ 
+    padding-top: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */ 
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.name-container{
+    background-color:var(--yellow);
+    padding: 10px 0;
+    position: absolute;
+    top: 0; 
+    left:0;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+.team-member:hover {
+    transform: translateY(-5px); /* Slightly raise the card on hover */ 
+}
+
+.team-member img {
+    width: 35px; /* Adjust image size */ 
+    height: 40px; 
+    border-radius: 50%; /* Make the image round */ 
+    margin-bottom: 10px; /* Space below the image */ 
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(50%,50%);
+}
+
+.info{
+    padding-top: 30px;
+}
+
+.profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom:0;
+    right:0;
+    transform: translate(50%,50%);
+}
+
+
+.name{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+/* For small screens, adjust the grid to have two members per row */
+@media screen and (max-width: 768px) {
+    .team-container {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+}

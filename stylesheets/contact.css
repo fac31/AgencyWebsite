@@ -104,8 +104,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Ensure items are spaced evenly */
-  text-align: center; /* Center align text within each div */
+  justify-content: space-between;
+  text-align: center;
   gap: 2rem;
   padding: 10px;
   background-color: #2F97C1;
@@ -116,13 +116,12 @@ button:hover {
 
 .social-media-icons {
   display: flex; /* Ensure the icons are displayed in a row */
-  /* align-items: center; */
   justify-content: center;
   align-items: center;
 }
 
 .socialmedia-icon {
-  margin:5px; /* Adjust margin between icons as needed */
+  margin:5px;
 }
 
 .socialmedia-icon img {
@@ -138,7 +137,7 @@ button:hover {
 }
 
 .bold {
-  font-weight: bold; /* Apply bold font weight */
+  font-weight: bold;
 }
 
 .left-text p,
