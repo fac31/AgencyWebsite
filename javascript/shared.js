@@ -1,24 +1,10 @@
-import { createDogImages } from "./home.js";
-import { createPaws } from "./home.js";
-import { loadPaws } from "./home.js";
-import { PicturesInfo } from "../info/pictures-info.js";
-
+import { initHomePage } from "./home.js";
 
 document.addEventListener("DOMContentLoaded", function() {
-  function App() {
-    // Home - Add and animate paws
-    const pawsContainer = document.querySelector('.home--paws-container');
-    const pawsNum = 9;
-    createPaws(pawsContainer, pawsNum);
-    const paws = document.querySelectorAll(".fa-paw");
-    loadPaws(paws);
-
-    // Home - Add dog images
-    const imagesGrid = document.querySelector(".home--images-grid");
-    createDogImages(imagesGrid, PicturesInfo);
+  // Initialise home page
+  if (window.location.pathname === '/') {
+    initHomePage();
   }
-
-    App();
 });
 
 
@@ -58,7 +44,8 @@ const toggleMenu = function() {
   burgerMenuTop.classList.toggle("mobile--nav-hamburger-top_active");
   burgerMenuMiddle.classList.toggle("mobile--nav-hamburger-middle_hidden");
   burgerMenuBottom.classList.toggle("mobile--nav-hamburger-bottom_active");
-  mobileNavMenu.classList.toggle("mobile--nav-menu_hidden");
+  mobileNavMenu.classList.toggle("mobile--nav-menu_active");
+  burgerMenu.classList.add("mobile--nav-hamburger_active");
 }
 
 burgerMenu.addEventListener("click", toggleMenu);

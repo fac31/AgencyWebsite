@@ -1,6 +1,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 :root {
@@ -27,6 +28,10 @@ a {
 
 /* NAV */
 
+.mobile--nav-container {
+  overflow: hidden;
+}
+
 .mobile--nav {
   position: absolute;
   top: 0;
@@ -34,7 +39,8 @@ a {
   justify-content: end;
   align-items: center;
   height: 6rem;
-  padding: 0 2rem;
+  width: 100%;
+  /* padding: 0 2rem; */
 }
 
 .mobile--nav-hamburger {
@@ -83,11 +89,19 @@ a {
   background: var(--yellow);
 }
 
+.mobile--nav-hamburger_active {
+  position: fixed;
+}
+
+header {
+  overflow: hidden;
+}
+
 .mobile--nav-menu {
   background: white;
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 50;
@@ -95,12 +109,13 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: left 0.5s ease;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  box-sizing: border-box;
 }
 
-.mobile--nav-menu_hidden {
-  left: 100%;
-  transition: left 0.5s ease;
+.mobile--nav-menu_active {
+  transform: translateX(0);
 }
 
 .mobile--nav-button {

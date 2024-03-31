@@ -1,6 +1,25 @@
+import { PicturesInfo } from "../info/pictures-info.js";
+
+// INITIALISE PAGE
+
+export function initHomePage() {
+  // Add and animate paws
+  const pawsContainer = document.querySelector('.home--paws-container');
+  const pawsNum = 9;
+  createPaws(pawsContainer, pawsNum);
+  const paws = document.querySelectorAll(".fa-paw");
+  loadPaws(paws);
+
+  // Add dog images
+  const imagesGrid = document.querySelector(".home--images-grid");
+  createDogImages(imagesGrid, PicturesInfo);
+}
+
+
+
 // CREATE PAWS
 
-export function createPaws(container, num) {
+function createPaws(container, num) {
   for (let i = 1; i <= num; i++) {
     const paw = document.createElement("i");
     paw.classList.add("fa-solid", "fa-paw", "home--paw-header", `home--paw-${i}`, "home--paw-hidden");
@@ -12,7 +31,7 @@ export function createPaws(container, num) {
 
 // PAWS ANIMATION
 
-export function loadPaws(paws) {
+function loadPaws(paws) {
   paws.forEach((paw, index) => {
     setTimeout(() => {
       paw.classList.remove("home--paw-hidden");
@@ -24,7 +43,7 @@ export function loadPaws(paws) {
 
 // CREATE DOG IMAGES
 
-export function createDogImages(container, images) {
+function createDogImages(container, images) {
   images.forEach(image => {
     const imageBox = document.createElement("div");
     const dogImg = document.createElement("img");
