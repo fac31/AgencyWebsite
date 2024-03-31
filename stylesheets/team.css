@@ -3,25 +3,37 @@ body {
     font-size: 14px;
 }
 
+.navigation--button {
+    all: unset;
+    font-family: var(--title);
+    background-color: var(--yellow);
+    width: 8rem;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 16px;
+    color: white;
+}
+  
+.nav--buttons-container {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+}
+
+
 .team--main-header {
     font-family: var(--title);
     font-size: 3rem;
     color: var(--yellow);
     letter-spacing: 0.2rem;
-    animation: slideIn 1s ease forwards;
-    position: fixed;
-    top: 70px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 12vh;
 }
-
 
 .team-section {
     text-align: center;
     background-color: white;
-    padding: 20px;
     font-family: var(--body);
-    margin-top: 150px;
     background-color: #2F97C1;
 }
 
@@ -93,9 +105,15 @@ body {
     font-size: 25px;
 }
 
-/* For small screens, adjust the grid to have two members per row */
+
 @media screen and (max-width: 768px) {
     .team-container {
-        max-width: 90%; /* Adjust maximum width for smaller screens */
+        max-width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-member img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
     }
 }
