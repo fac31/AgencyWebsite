@@ -1,5 +1,5 @@
 // Data for each member
-const data = [
+export const data = [
     {
         imgSrc : 'images/lady.png',
         alt: 'Buddy the dog',

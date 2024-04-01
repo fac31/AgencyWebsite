@@ -1,5 +1,5 @@
 import {data} from "/javascript/data.js";
-
+ // Append memberDiv to a parent container
 const createImage = (obj) => {
     //Create elements
     const memberDiv = document.createElement('div');
@@ -24,12 +24,12 @@ const createImage = (obj) => {
 
     //give elements content
 
-    profilePic.src = member.imgSrc;
-    profilePic.alt = member.alt;    
-    nameSpan.textContent = member.name;
-    likesParagraph.textContent = member.likes;
-    dislikesParagraph.textContent = member.dislikes;
-    bestPalParagraph.textContent = member.bestPal;
+    profilePic.src = obj.imgSrc;
+    profilePic.alt = obj.alt;    
+    nameSpan.textContent = obj.name;
+    likesParagraph.textContent = obj.likes;
+    dislikesParagraph.textContent = obj.dislikes;
+    bestPalParagraph.textContent = obj.bestPal;
 
     //Append elements to parent
     nameContainer.appendChild(profilePic);
@@ -40,13 +40,30 @@ const createImage = (obj) => {
     memberDiv.appendChild(nameContainer);
     memberDiv.appendChild(infoDiv);
 
+    // return memberDiv;
 
-    // Append memberDiv to a parent container
-    const parentDiv = document.getElementById('team-container');
-    team-container.appendChild(memberDiv);
 }
 
 // Call the createImage function for each team member
-data.forEach((member) => {
-    createImage(member)
-})
+// data.forEach((member) => {
+//     createImage(member)
+// })
+
+// const initTeamMembers = () => {
+//     // Find the existing team container or create one if it doesn't exist
+//     let parentDiv = document.querySelector('.team-container');
+//     if (!parentDiv) {
+//         parentDiv = document.createElement('div');
+//         parentDiv.classList.add('team-container');
+//         document.body.appendChild(parentDiv); // Append to body or another suitable parent
+//     }
+
+//     // Append team members
+//     data.forEach((member) => {
+//         const memberDiv = createImage(member);
+//         parentDiv.appendChild(memberDiv);
+//     });
+// }
+
+// // Initialize team members when the DOM is ready
+// document.addEventListener('DOMContentLoaded', initTeamMembers);
