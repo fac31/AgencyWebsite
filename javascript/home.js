@@ -47,7 +47,8 @@ function createDogImages(container, images) {
   images.forEach(image => {
     const imageBox = document.createElement("div");
     const dogImg = document.createElement("img");
-    dogImg.setAttribute("src", image)
+    dogImg.setAttribute("src", image.src);
+    dogImg.setAttribute("alt", image.alt);
 
     imageBox.classList.add("home--dog-image__container");
     dogImg.classList.add("home--dog-image");

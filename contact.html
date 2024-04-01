@@ -3,6 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Site for Pawsitivity Partners. An agency here to provide you with canine company whenever you need it most.">
       <link rel="icon" href="images/favicon.ico">
       <link rel="stylesheet" href="./stylesheets/shared.css">
       <link rel="stylesheet" href="./stylesheets/contact.css">
@@ -16,25 +17,25 @@
   </head>
   <body class="contact--page">
     <header>
-      <nav class="mobile--nav">
-        <button class="mobile--nav-hamburger" aria-label="Toggle navigation menu">
+      <nav class="mobile--nav" role="navigation">
+        <button class="mobile--nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
           <div class="mobile--nav-hamburger-top"></div>
           <div class="mobile--nav-hamburger-middle"></div>
           <div class="mobile--nav-hamburger-bottom"></div>
         </button>
-        <div class="mobile--nav-menu mobile--nav-menu_hidden">
-          <button class="mobile--nav-button"><a href="/">HOME</a></button>
-          <button class="mobile--nav-button"><a href="team.html">MEET THE GANG</a></button>
-          <button class="mobile--nav-button"><a href="contact.html">CONTACT US</a></button>
+        <div class="mobile--nav-menu mobile--nav-menu_hidden" aria-hidden="true">
+          <a href="/" role="menuitem"><button class="mobile--nav-button">HOME</button></a>
+          <a href="team.html" role="menuitem"><button class="mobile--nav-button">MEET THE GANG</button></a>
+          <a href="contact.html" role="menuitem"><button class="mobile--nav-button">CONTACT US</button></a>
         </div>
       </nav>
-      <nav class="desktop--nav">
+      <nav class="desktop--nav" role="navigation">
         <div>
-          <a href="/"><i class="fa-solid fa-paw desktop--nav-paw"></i></a>
+          <a href="/" aria-label="Home"><i class="fa-solid fa-paw desktop--nav-paw"></i></a>
         </div>
         <div class="desktop--nav--buttons-container">
-          <button class="navigation--button"><a href="team.html">MEET THE GANG</a></button>
-          <button class="navigation--button"><a href="contact.html">CONTACT US</a></button>
+          <a href="team.html"><button class="navigation--button">MEET THE GANG</button></a>
+          <a href="contact.html"><button class="navigation--button">CONTACT US</button></a>
         </div>
       </nav>
     </header>
