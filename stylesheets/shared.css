@@ -141,6 +141,15 @@ header {
   color: white;
 }
 
+.navigation--button:focus {
+  outline: 2px solid white;
+}
+
+.mobile--nav-hamburger:focus,
+.mobile--nav-button:focus {
+  outline: 2px solid var(--yellow);
+}
+
 @media (min-width: 600px) {
   .mobile--nav {
     display: none;
