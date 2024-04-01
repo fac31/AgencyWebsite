@@ -1,4 +1,5 @@
 import {data} from "/javascript/data.js";
+
  // Append memberDiv to a parent container
 const createImage = (obj) => {
     //Create elements
@@ -49,21 +50,21 @@ const createImage = (obj) => {
 //     createImage(member)
 // })
 
-// const initTeamMembers = () => {
-//     // Find the existing team container or create one if it doesn't exist
-//     let parentDiv = document.querySelector('.team-container');
-//     if (!parentDiv) {
-//         parentDiv = document.createElement('div');
-//         parentDiv.classList.add('team-container');
-//         document.body.appendChild(parentDiv); // Append to body or another suitable parent
-//     }
+const initTeamMembers = () => {
+    // Find the existing team container or create one if it doesn't exist
+    let parentDiv = document.querySelector('.team-container');
+    if (!parentDiv) {
+        parentDiv = document.createElement('div');
+        parentDiv.classList.add('team-container');
+        document.body.appendChild(parentDiv); // Append to body or another suitable parent
+    }
 
-//     // Append team members
-//     data.forEach((member) => {
-//         const memberDiv = createImage(member);
-//         parentDiv.appendChild(memberDiv);
-//     });
-// }
+    // Append team members
+    data.forEach((member) => {
+        const memberDiv = createImage(member);
+        parentDiv.appendChild(memberDiv);
+    });
+}
 
-// // Initialize team members when the DOM is ready
-// document.addEventListener('DOMContentLoaded', initTeamMembers);
+// Initialize team members when the DOM is ready
+document.addEventListener('DOMContentLoaded', initTeamMembers);
