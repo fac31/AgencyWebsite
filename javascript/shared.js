@@ -46,6 +46,15 @@ const toggleMenu = function() {
   burgerMenuBottom.classList.toggle("mobile--nav-hamburger-bottom_active");
   mobileNavMenu.classList.toggle("mobile--nav-menu_active");
   burgerMenu.classList.add("mobile--nav-hamburger_active");
+
+  const isMobileMenuOpen = mobileNavMenu.classList.contains("mobile--nav-menu_active");
+  burgerMenu.setAttribute("aria-expanded", isMobileMenuOpen);
+  mobileNavMenu.setAttribute("aria-hidden", !isMobileMenuOpen);
 }
 
 burgerMenu.addEventListener("click", toggleMenu);
+
+
+document.addEventListener('focus', function(event) {
+  console.log('Focused element:', event.target);
+}, true);
