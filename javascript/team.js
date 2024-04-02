@@ -26,7 +26,7 @@ const createImage = (obj) => {
     //give elements content
 
     profilePic.src = obj.imgSrc;
-    profilePic.alt = obj.alt;    
+    profilePic.alt = obj.alt;
     nameSpan.textContent = obj.name;
     likesParagraph.textContent = obj.likes;
     dislikesParagraph.textContent = obj.dislikes;
@@ -41,7 +41,7 @@ const createImage = (obj) => {
     memberDiv.appendChild(nameContainer);
     memberDiv.appendChild(infoDiv);
 
-    // return memberDiv;
+    return memberDiv;
 
 }
 
