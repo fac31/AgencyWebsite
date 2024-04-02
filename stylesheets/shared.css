@@ -2,6 +2,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  position: relative;
+  padding-bottom: 12rem;
 }
 
 :root {
@@ -148,6 +150,30 @@ header {
 .mobile--nav-hamburger:focus,
 .mobile--nav-button:focus {
   outline: 2px solid var(--yellow);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  color: white;
+  font-family: var(--body);
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-icon {
+  font-size: 2rem;
 }
 
 @media (min-width: 600px) {
