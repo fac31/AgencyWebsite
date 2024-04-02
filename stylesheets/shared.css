@@ -147,9 +147,12 @@ header {
   outline: 2px solid white;
 }
 
-.mobile--nav-hamburger:focus,
+.mobile--nav-hamburger:focus {
+  scale: 1.1;
+}
+
 .mobile--nav-button:focus {
-  outline: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
 }
 
 footer {

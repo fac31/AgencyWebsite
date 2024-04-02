@@ -39,6 +39,10 @@ const burgerMenuTop = document.querySelector(".mobile--nav-hamburger-top");
 const burgerMenuMiddle = document.querySelector(".mobile--nav-hamburger-middle");
 const burgerMenuBottom = document.querySelector(".mobile--nav-hamburger-bottom");
 const mobileNavMenu = document.querySelector(".mobile--nav-menu");
+const mobileButtonHome = document.querySelector(".mobile--nav-button_home");
+const mobileButtonMeet = document.querySelector(".mobile--nav-button_meet");
+const mobileButtonContact = document.querySelector(".mobile--nav-button_contact");
+const aboutButton = document.querySelector(".about--button");
 
 const toggleMenu = function() {
   burgerMenuTop.classList.toggle("mobile--nav-hamburger-top_active");
@@ -50,6 +54,10 @@ const toggleMenu = function() {
   const isMobileMenuOpen = mobileNavMenu.classList.contains("mobile--nav-menu_active");
   burgerMenu.setAttribute("aria-expanded", isMobileMenuOpen);
   mobileNavMenu.setAttribute("aria-hidden", !isMobileMenuOpen);
+  mobileButtonHome.setAttribute("tabindex", isMobileMenuOpen ? "2" : "-1");
+  mobileButtonMeet.setAttribute("tabindex", isMobileMenuOpen ? "3" : "-1");
+  mobileButtonContact.setAttribute("tabindex", isMobileMenuOpen ? "4" : "-1");
+  if (aboutButton) aboutButton.setAttribute("tabindex", isMobileMenuOpen ? "-1" : "2")
 }
 
 burgerMenu.addEventListener("click", toggleMenu);
