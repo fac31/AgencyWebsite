@@ -87,7 +87,7 @@ header {
 }
 
 .home--about-section {
-  margin: 12rem auto;
+  margin: 12rem auto 0 auto;
   width: 90%;
   text-align: center;
   color: white;
