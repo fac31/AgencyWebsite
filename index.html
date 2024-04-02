@@ -17,15 +17,15 @@
   <body class="home--page">
       <header>
         <nav class="mobile--nav" role="navigation">
-          <button class="mobile--nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
+          <button class="mobile--nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="1">
             <div class="mobile--nav-hamburger-top"></div>
             <div class="mobile--nav-hamburger-middle"></div>
             <div class="mobile--nav-hamburger-bottom"></div>
           </button>
           <div class="mobile--nav-menu mobile--nav-menu_hidden" aria-hidden="true">
-            <a href="/" role="menuitem"><button class="mobile--nav-button">HOME</button></a>
-            <a href="team.html" role="menuitem"><button class="mobile--nav-button">MEET THE GANG</button></a>
-            <a href="contact.html" role="menuitem"><button class="mobile--nav-button">CONTACT US</button></a>
+            <a href="/" role="menuitem" tabindex="-1"><button class="mobile--nav-button mobile--nav-button_home">HOME</button></a>
+            <a href="team.html" role="menuitem" tabindex="-1"><button class="mobile--nav-button mobile--nav-button_meet">MEET THE GANG</button></a>
+            <a href="contact.html" role="menuitem" tabindex="-1"><button class="mobile--nav-button mobile--nav-button_contact">CONTACT US</button></a>
           </div>
         </nav>
         <nav class="desktop--nav" role="navigation">
@@ -33,8 +33,8 @@
             <a href="/" aria-label="Home"><i class="fa-solid fa-paw desktop--nav-paw"></i></a>
           </div>
           <div class="desktop--nav--buttons-container">
-            <a href="team.html"><button class="navigation--button">MEET THE GANG</button></a>
-            <a href="contact.html"><button class="navigation--button">CONTACT US</button></a>
+            <a href="team.html" tabindex="-1"><button class="navigation--button">MEET THE GANG</button></a>
+            <a href="contact.html" tabindex="-1"><button class="navigation--button">CONTACT US</button></a>
           </div>
         </nav>
         <h1 class="home--main-header"><span>PAWSITIVITY</span><span>PARTNERS</span></h1>
@@ -49,7 +49,7 @@
           <p class="home--about-text">Choose Pawsitivity Partners for all your happiness needs!</p>
           <div class="home--images-grid">
           </div>
-          <a href="team.html"><button class="navigation--button">MEET THE GANG</button></a>
+          <a href="team.html" tabindex="-1"><button class="navigation--button about--button" tabindex="1">MEET THE GANG</button></a>
         </section>
       </main>
   </body>
