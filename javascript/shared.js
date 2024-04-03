@@ -1,9 +1,21 @@
 import { initHomePage } from "./home.js";
+import { initTeamPage } from "./team.js";
+import { initContactPage } from "./contact.js";
 
 document.addEventListener("DOMContentLoaded", function() {
   // Initialise home page
   if (window.location.pathname === '/') {
     initHomePage();
+  }
+
+  // Initialise team page
+  if (window.location.pathname === '/team.html') {
+    initTeamPage();
+  }
+
+  // Initialise contact page
+  if (window.location.pathname === '/contact.html') {
+    initContactPage();
   }
 });
 
@@ -61,8 +73,3 @@ const toggleMenu = function() {
 }
 
 burgerMenu.addEventListener("click", toggleMenu);
-
-
-document.addEventListener('focus', function(event) {
-  console.log('Focused element:', event.target);
-}, true);
